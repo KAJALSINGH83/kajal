@@ -5,33 +5,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="16x96" href="/img/fevicon.png" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="services.css">
-  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="m-queries.css" />
   <title>LAKHVIR SINGH PORTFOLIO</title>
 </head>
 
 <body>
-  <section class="home">
+  
+ <!--......H O M E.......-->
+  <section id="Home" class="home">
     <nav class="navbar">
+      <!-- WEBSITE  LOGO -->
       <div class="logo">
-        <h2>Future WEB.</h2>
+        <h2><a href="#Home">Lakhvir Dev..</a></h2>
       </div>
 
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Our-Services">Services</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
       </ul>
 
       <div class="right-nav">
-        <img src="srch.png" alt="Search here" id="Search-icon" />
-        <button id="hire-me">Hire me</button>
+        <img src="/img/srch.png" alt="Search here" id="Search-icon" />
+        <a href="#contact-us"><button id="hire-me">Hire me</button></a>
       </div>
     </nav>
 
+    <!-- Developer INTRO CONTAINER IN HOME  -->
     <div class="container">
       <h4>Hey...! I am</h4>
       <h1>Lakhvir Singh</h1>
@@ -50,13 +55,16 @@
     </div>
   </section>
 
-  <section id="about">
+  
+
+ <!--....WHO AM I AND ABOUT US SECTION START FROM HERE..... -->
+  <section id="about" data-aos="fade-left" data-aos-offset="113" data-aos-easing="ease-in-sine">
     <div class="whoami">
       <h1>Who am i</h1>
     </div>
 
     <div class="aboutimg">
-      <img src="contentgirl.jpg" alt="" />
+      <img src="/img/lakhvir-illustration.jpg" alt="" />
 
       <div class="content">
         <h2>Lakhvir Singh</h2>
@@ -64,7 +72,7 @@
         <p class="para">
           Dear Sir/Mam, I’m LAKHVIR SINGH & I am from India. I'm -
           Front-End-Developer and Web Designer. I not only make Beautiful
-          Landing Pages but also solve user problems while creating Fully
+          Websites but also solve user problems while creating Fully
           Responsive Sites for your business. I will give you value more than
           money Sir/Madam.
           <br />
@@ -75,19 +83,24 @@
           style. High-quality Design with pixel perfect graphics Fully
           Editable ( you can easily change the content) Device friendly
           website design Compatible with all Browsers Attractive Fonts Useful
-          design elements included Professional, Classy, Beautiful 100%
-          Satisfaction High Converting Original & Custom designed only for you
-          Auto Responder Integration *Modern Type Landing Page + Fully
-          Responsive Site + Fast Delivery*
+          design elements included Professional, Classy, Beautiful 100%....
+          <!-- Satisfaction High Converting Original. & Custom designed only for you
+          Auto Responder Integration *Modern Type Websites + Fully
+          Responsive Site + Fast Delivery* -->
         </p>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+
+
+<!-- .........DEVELOPER SKILLS SECTION START FROM HERE (MY SKILLS)...... -->
+  <section id="skills" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
     <div class="myskills">
       <h1>My Skills</h1>
     </div>
+
+    <!-- SKILLS BOXES  -->
     <div class="boxes">
       <div class="skills-box">
         <img src="Skills icons/html5-brands.svg" class="skills-icons" alt="css.img" />
@@ -157,27 +170,221 @@
     </div>
   </section>
 
-  <section id="business-website">
-    <div class="h1p">
-    <div class="importance-content">
-    <h1>Why Every Business Needs A Website ?</h1>
-    <p>Yes, every business needs a website here is the reason!
 
-      Just Imagine, you invested some big amount and opened your own construction firm where you will provide all types of construction services in various cities. And also opened a new office and printed brochures, business cards and shared some with your family and friends. Yes, I agree you may get a few references also from friends. But the conversion rate is less.
-      
-      The one who actually looking for the exact service you are providing will be searching on the internet. They will be browsing for the best construction company in Bangalore or your city name, near me, or with certain other features.
-      
-      Ok fine! you have added your company google my business page and you gave a phone number too where people can contact you.
-      
-      But if he is searching at midnight and your working hours is till 7 or 8 pm then he will never call you. Even if he made a decision to call you in the morning, then he definitely wants to know what kind of work you do? what are the works you have already done? Will you also provide interior design service?
-      
-      Now people want proof of your work, before availing it.
-      
-      What if you own a website for your construction firm and mention in-detailed services list on the website. What kind of works do you do, your completed projects ongoing projects. Then a customer who was searching for this service looks into your website and gets some trust and there will be a high chance of getting construction work from your company.
-      
-      Website is all about building trust with your customers, proving your existence in the current market. And connecting to them at any time and anywhere.</p>
+
+  <!-- .....Why Every Business Needs A Website ? - SECTION START FROOM HERE.....  -->
+  <section id="business-website" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+    <div class="h1-p">
+      <div class="importance-content">
+        <h1>Why Every Business Needs A Website ?</h1>
+        <p>
+          Yes, every business needs a website here is the reason! Just
+          Imagine, you invested some big amount and opened your own
+          construction firm where you will provide all types of construction
+          services in various cities. And also opened a new office and printed
+          brochures, business cards and shared some with your family and
+          friends. Yes, I agree you may get a few references also from
+          friends. But the conversion rate is less. The one who actually
+          looking for the exact service you are providing will be searching on
+          the internet. They will be browsing for the best construction
+          company in Bangalore or your city name, near me, or with certain
+          other features. Ok fine! you have added your company google my
+          business page and you gave a phone number too where people can
+          contact you. But if he is searching at midnight and your working
+          hours is till 7 or 8 pm then he will never call you. Even if he made
+          a decision to call you in the morning, then he definitely wants to
+          know what kind of work you do? what are the works you have already
+          done? Will you also provide interior design service? Now people want
+          proof of your work, before availing it. What if you own a website
+          for your construction firm and mention in-detailed services list on
+          the website. What kind of works do you do, your completed projects
+          ongoing projects. Then a customer who was searching for this service
+          looks into your website and gets some trust and there will be a high
+          chance of getting construction work from your company. Website is
+          all about building trust with your customers, proving your existence
+          in the current market. And connecting to them at any time and
+          anywhere.
+        </p>
+      </div>
     </div>
-   </div>
   </section>
+
+
+
+  <!-- ........OUR SERVICES SECTION START FROM HERE....... -->
+  <section id="Our-Services" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+    <div class="services-heading">
+      <h1>Our Services</h1>
+    </div>
+
+    <!-- SERVICES BOXES  -->
+    <div class="boxes-container">
+      <div class="services-box">
+        <span>
+          <img src="services-illu/Web-Development.png" class="services-boxes-illu" alt="" />
+          <h4>Web Development</h4>
+          <p>
+            Web development is the work involved in developing a website for
+            the Internet (World Wide Web) or an intranet (a private network).
+            Web development can range from developing a simple single static
+            page of plain text to complex web applications, electronic
+            businesses, and social network services.
+          </p>
+        </span>
+      </div>
+
+      <div class="services-box">
+        <img src="services-illu/UI & UX Design.png" class="services-boxes-illu" alt="" />
+        <h4>UI & UX Design</h4>
+        <p>
+          (UI)User interface design or user interface engineering is the
+          design of user interfaces for machines and software, such as
+          computers, home appliances, mobile devices, and other electronic
+          devices, with the focus on maximizing usability and the user
+          experience.
+        </p>
+      </div>
+
+      <div class="services-box">
+        <img src="services-illu/Web-Desgining.png" class="services-boxes-illu" alt="" />
+        <h4>Web Designing</h4>
+        <p>
+          Web design encompasses many different skills and disciplines in the
+          production and maintenance of websites. The different areas of web
+          design include web graphic design; user interface design; authoring,
+          including standardised code and proprietary software; user
+          experience designs.
+        </p>
+      </div>
+
+      <div class="services-box">
+        <img src="services-illu/Responsive-Design.png" class="services-boxes-illu" alt="" />
+        <h4>Responsive Designing</h4>
+        <p>
+          Responsive web design or responsive design is an approach to web
+          design that aims to make web pages render well on a variety of
+          devices and window or screen sizes from minimum to maximum display
+          size to ensure usability and satisfaction.
+        </p>
+      </div>
+
+      <div class="services-box">
+        <img src="services-illu/SEO.png" class="services-boxes-illu" alt="" />
+        <h4>SEO</h4>
+        <p>
+          Search engine optimization is the process of improving the quality
+          and quantity of website traffic to a website or a web page from
+          search engines. SEO targets unpaid traffic rather than direct
+          traffic or paid traffic.
+        </p>
+      </div>
+
+      <div class="services-box">
+        <img src="services-illu/Happy-Customers.png" class="services-boxes-illu" alt="" />
+        <h4>Happy Customer</h4>
+        <p>
+          Customer happiness is the level of loyalty and satisfaction that
+          your customers experience after engaging with your product or team.
+          It's the feeling that comes from your customers having their needs
+          met regularly, at the right time, in the right way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ......LET ME GET YOU A Beautiful WEBSITE SECTION START FROM HERE......  -->
+  <section id="letmeget" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+    <div class="letmeget-content">
+      <h2>Let Me Get You A Beautiful Website</h2>
+      <a href="#contact-us"><button id="hire-me2">Hire me</button></a>
+    </div>
+  </section>
+
+
+  
+  <!-- .....GET IN TOUCH (CONTACT US) PAGE START FROM HERE..... -->
+  <section id="contact-us">
+    <div id="getintouch">
+      <h1 class="get-in-touch">Get in touch</h1>
+    </div>
+
+
+    <div class="left-right">
+      <!-- GET IN TOUCH (LEFT) -->
+      <div class="left">
+        <div class="left-content">
+          <div class="left-heading">
+            <h2>Get in touch</h2>
+            <p>Want to know more? Don't hesitate to mail me :)</p>
+          </div>
+
+          <div class="left-dev-address">
+            <div class="info-icons">
+              <img src="ContactUS Images/programmer.png" alt="" />
+              <div class="dev-info">
+                <h4>Name</h4>
+                <p>Lakhvir Singh Saroye</p>
+              </div>
+            </div>
+
+            <div class="info-icons">
+              <img src="ContactUS Images/location.png" alt="" />
+              <div class="dev-info">
+                <h4>Address</h4>
+                <p>Patiala,PUNJAB(INDIA)</p>
+              </div>
+            </div>
+
+            <div class="info-icons">
+              <img src="ContactUS Images/mail.png" alt="" />
+              <div class="dev-info">
+                <h4>Email</h4>
+                <p>lakhvirsaroye13@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MESSAGE ME (RIGHT) -->
+      <div class="right">
+        <div class="right-heading">
+          <h1>Message me</h1>
+        </div>
+        <div class="right-form">
+          <form>
+            <img src="/ContactUS Images/user.png" alt="" />
+            <input type="text" name="username" id="name" placeholder="Name" />
+            <img src="/ContactUS Images/mail.png" alt="" id="form-mail-icon" />
+            <input type="email" name="useremail" id="right-email" placeholder="Email" />
+            <textarea name="" id="User-message" rows="5" placeholder="Message"></textarea>
+          </form>
+        </div>
+        <div class="right-button">
+          <button><img src="ContactUS Images/send.png" alt="" /></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website loading spinner -->
+  <!-- <div id="loader"></div>
+
+  <script>
+    $(window).load(function() {
+      $('#loader').hide();
+    });
+  </script> -->
+
+
+  <!-- fade SECTIONS  left and right animation effectS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  
 </body>
 </html>

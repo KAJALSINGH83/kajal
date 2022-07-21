@@ -1,7 +1,11 @@
+
+/* FONTS WHICH USE IN WEBSITE FROM GOOGLE FONTS  */
 @import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -11,12 +15,21 @@
   list-style: none;
 }
 
-.home {
-  height: 600px;
-  z-index: 10;
-  background: url("Purple BG 2.jpg") no-repeat center/cover;
+html {
+  scroll-behavior: smooth;
 }
 
+
+/*---------- H O M E -------*/
+.home {
+  height: 600px;
+  width: 100%;
+  z-index: 10;
+  font-family: "Montserrat", sans-serif;
+  background: url("/img/home-background.jpg") no-repeat center/cover;
+}
+
+/*-------NAVBAR------*/
 nav {
   width: 100%;
   display: flex;
@@ -24,15 +37,14 @@ nav {
   padding: 20px 0 16px 30px;
   align-items: center;
   justify-content: space-between;
-  font-family: "Nunito", sans-serif;
   background-color: #3e0765;
   box-shadow: 1px 1px 5px #3e0765;
   position: fixed;
 }
-.logo {
+
+.logo h2 a {
   color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.9rem;
   text-shadow: 1px 1px 10px rgb(112, 115, 187);
 }
 
@@ -48,9 +60,9 @@ ul li {
 }
 
 .active {
-  font-weight: 400;
-  font-size: 1.1rem;
-  letter-spacing: 1.4px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
 }
 
 li a {
@@ -77,6 +89,7 @@ li a:hover:after {
   width: 78%;
 }
 
+/* NAVBAR RIGHT SECTION */
 .right-nav {
   display: flex;
   align-items: center;
@@ -96,6 +109,7 @@ li a:hover:after {
   color: rgb(255, 255, 255);
   border: 2px solid transparent;
   background-color: #ed71be;
+  font-family: "Montserrat", sans-serif;
 }
 
 #hire-me:hover {
@@ -105,6 +119,7 @@ li a:hover:after {
   background-color: transparent;
 }
 
+/* HI I AM LAKHVIR CONTAINER */
 .container {
   padding: 20px;
   display: inline-block;
@@ -127,7 +142,8 @@ li a:hover:after {
   font-family: "Bitter", serif;
 }
 
-.container h5 {
+.container h5,
+.get-in-touch {
   background: -webkit-linear-gradient(#1da1f2, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,6 +161,7 @@ li a:hover:after {
   top: 20;
 }
 
+/* START NOW BUTTON DIV*/
 .start {
   margin-top: 35px;
 }
@@ -176,6 +193,7 @@ li a:hover:after {
   transition: 0.4s;
 }
 
+/* OFFERS DIV */
 .offers {
   display: block;
   color: #addbf7;
@@ -188,8 +206,24 @@ li a:hover:after {
   font-size: 1.1rem;
 }
 
+
+/*---------WHO AM I SECTION (ABOUT US)-----------*/
 #about {
-  background-image: linear-gradient(to left bottom, #38065d, #39065e, #3a065e, #3b075f, #3c075f, #3d0761, #3e0864, #3f0866, #40096b, #410a71, #420b76, #420c7c);
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(to left bottom,
+      #38065d,
+      #39065e,
+      #3a065e,
+      #3b075f,
+      #3c075f,
+      #3d0761,
+      #3e0864,
+      #3f0866,
+      #40096b,
+      #410a71,
+      #420b76,
+      #420c7c);
 }
 
 #about h1 {
@@ -218,25 +252,25 @@ li a:hover:after {
   top: 100%;
 }
 
+/* DEVELOPER IMAGE LEFT SIDE */
 #about img {
-  height: auto;
+  height: 510px;
   width: 450px;
-  margin: 80px 0;
+  margin: 90px 0;
   border-radius: 7px;
 }
 
 .aboutimg {
   display: flex;
   padding: 0px 40px;
-  justify-content: space-around;
 }
 
+/* DEVELOPER INTRO */
 .content {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 900px;
-  margin: 50px 60px;
+  margin: 50px 20px;
 }
 
 .content h2 {
@@ -260,6 +294,8 @@ li a:hover:after {
   line-height: 35px;
 }
 
+
+/*--------MY SKILLS SECTION --------*/
 #skills {
   background: linear-gradient(to top, #e0eafc, #cfdef3);
   height: auto;
@@ -267,7 +303,7 @@ li a:hover:after {
   font-family: "lato";
 }
 
-.myskills h1{
+.myskills h1 {
   position: relative;
   display: block;
   width: fit-content;
@@ -280,10 +316,11 @@ li a:hover:after {
   -webkit-text-fill-color: transparent;
 }
 
-.myskills h1:after{
+.myskills h1:after,
+.get-in-touch:after {
   content: " ";
   height: 3px;
-  width: 138px;
+  width: 80%;
   display: block;
   border-radius: 50px;
   background: -webkit-linear-gradient(#1da1f2, #3e0765);
@@ -292,9 +329,10 @@ li a:hover:after {
   bottom: 1;
 }
 
+/* MY SKILLS BOXES */
 .boxes {
   display: flex;
-  margin: auto 100px;
+  margin: auto 96px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -323,7 +361,7 @@ li a:hover:after {
 }
 
 .skills-box h4 {
-  color: #3D075F;
+  color: #3d075f;
   margin: 10px 0 8px 0;
   letter-spacing: 2px;
   font-size: 1.5rem;
@@ -339,11 +377,12 @@ li a:hover:after {
 }
 
 
-/* ---- BUSINESS_WESBITE ---- */
-#business-website{
+
+/* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
+#business-website {
   width: auto;
   height: 600px;
-  background-image: url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') ;
+  background-image: url("https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,7 +390,7 @@ li a:hover:after {
   background-blend-mode: soft-light;
 }
 
-.importance-content{
+.importance-content {
   display: block;
   margin: 0 auto;
   padding: 18px;
@@ -367,14 +406,319 @@ li a:hover:after {
   backdrop-filter: saturate(180%) blur(15px);
 }
 
-.importance-content h1{
+.importance-content h1 {
   font-size: 2.5rem;
 }
-  
-.importance-content p{
+
+.importance-content p {
   opacity: 0.8;
   padding-top: 40px;
   text-shadow: 1px 1px 8px rgb(0, 0, 0);
 }
 
 
+
+/*----OUR SERVICES----*/
+#Our-Services {
+  font-family: 'lato';
+  background: linear-gradient(to top, #e0eafc, #cfdef3);
+}
+
+.services-heading {
+  display: block;
+  padding-top: 20px;
+}
+
+.services-heading h1 {
+  display: flex;
+  font-size: 2.4rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(#1da1f2, #3e0765);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-heading h1:after {
+  content: " ";
+  height: 4px;
+  width: 180px;
+  display: block;
+  border-radius: 50px;
+  background: -webkit-linear-gradient(#1da1f2, #3e0765);
+  position: absolute;
+  left: 44%;
+  bottom: 0;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 36px;
+  justify-content: space-evenly;
+  font-family: "lato";
+}
+
+/*---------OUR-SERVICES BOXES---------*/
+.services-box {
+  height: 400px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 50px 15px 20px 15px;
+  text-align: center;
+  flex-direction: column;
+  transition: 0.4s ease-in-out background-color;
+}
+
+.services-box:hover {
+  color: white;
+  border-radius: 13px;
+  background-color: #3d0761d7;
+}
+
+.services-boxes-illu {
+  height: 170px;
+  width: 240px;
+  margin: auto;
+  caret-color: transparent;
+}
+
+.services-box h4 {
+  font-size: 1.5rem;
+  margin: 2px 0 7px 0;
+}
+
+.services-box p {
+  opacity: 0.8;
+  width: 340px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+/*--------Let Me Get You A Beautiful Website--------- */
+#letmeget {
+  background: url('/img/letnenon.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 400px;
+  font-family: 'nunito';
+}
+
+.letmeget-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: saturate(180%) blur(6px);
+}
+
+.letmeget-content h2 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+
+#letmeget button {
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 14px 100px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  background-image: linear-gradient(to bottom, #8c50f9, #552b87);
+
+}
+
+#letmeget button:hover {
+  background-image: linear-gradient(to bottom, #A31E4A, #0C8880);
+}
+
+
+/* -------GET IN TOUCH (CONTACT US)-------- */
+#contact-us {
+  background-color: #172337;
+
+  height: 600px;
+  font-family: 'lato';
+}
+
+#getintouch {
+  display: flex;
+  justify-content: center;
+}
+
+.get-in-touch {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.left-right {
+  display: flex;
+  color: white;
+  margin: 40px 0;
+  justify-content: space-around;
+}
+
+
+/* LEFT SIDE GET IN TOUCH PAGE */
+.left {
+  font-family: 'Montserrat';
+}
+
+.left-heading h2 {
+  font-size: 1.9rem;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+}
+
+.left-heading p {
+  opacity: 0.7;
+  margin: 5px 0;
+}
+
+.left-dev-address {
+  display: block;
+  margin-top: 30px;
+}
+
+.dev-info {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.dev-info p {
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.info-icons {
+  margin-top: 10px;
+}
+
+.info-icons img {
+  height: 50px;
+  opacity: 0.8;
+  padding: 12px 10px 0 0;
+  filter: brightness(0) invert(1);
+}
+
+
+/* RIGHT SIDE MESSAGE ME FORM  */
+.right {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'montserrat';
+}
+
+.right-heading {
+  display: flex;
+}
+
+.right-heading h1 {
+  font-size: 1.9rem;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+.right-form {
+  margin-top: 20px;
+  position: relative;
+}
+
+.right-form img {
+  width: 23px;
+  margin-top: 12px;
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+}
+
+#form-mail-icon {
+  width: 26px;
+  margin-top: 20px;
+}
+
+.right-form input {
+  display: block;
+  outline: none;
+  margin-top: 8px;
+  width: 390px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 45px;
+  border-radius: 10px;
+  transition: 0.5s all ease-in;
+}
+
+.right-form input:focus,
+.right-form textarea:focus {
+  box-shadow: 1px 1px 20px #1da1f2;
+  transform: scale(1.03);
+}
+
+.right-form :placeholder-shown {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.right-form textarea {
+  max-width: 390px;
+  min-width: 390px;
+  min-height: 100px;
+  max-height: 200px;
+
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.5s all ease-in;
+}
+
+.right-button button {
+  border: none;
+  width: 390px;
+  cursor: pointer;
+  color: white;
+  background-color: #1da1f2;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 13px 40px;
+  border-radius: 30px;
+  caret-color: transparent;
+}
+
+.right-button button img {
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.right-button button:hover {
+  background-color: black;
+  border: 2px solid #ffffff;
+}
+
+
+
+
+/* ALL IMAGES,ICONS AND ILLUSTRAIONS DOWNLOAD FROM " FLATICON - LUNAPIC - UNPLASH WEBITES" */
+
+/* IMAGES CREDIT GOES TO THERE RESPECT CREATORS :)  */
