@@ -34,6 +34,8 @@
 }
 
 
+
+
 /* Small screens, laptops */
 @media screen and (min-width:820px) and (max-width:1024px) {
     html {
@@ -47,35 +49,84 @@
 }
 
 
+
+
+
+
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width:819px) {
-    body{
-        font-size: 95%;
+@media screen and (max-width:819px) {
+    html{
+        /* font-size: 85%; */
     }
 
     .home {
-        background: url("/img/—Pngtree—children\ s\ software\ programming_5401259.png") no-repeat center/cover;
-      }
-
-     /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
-    .h1-p{
-        min-height: 750px;
+        min-height: 700px;
+        background: url("/img/home-back2.png");
+        background-size: cover;
     }
 
+      .container{
+        top: 55%;
+        left: 20%;
+      }
+
+      .container:before{
+        display: none;
+      }
+
+      .start {
+        display: none;
+      }
+
+
+      /* DEVELOPER IMAGE LEFT SIDE */
+    .aboutimg{
+        padding: 0;
+      }
+
+      #about img{
+        width: 90%;
+        height: 1%;
+      }
+
+      .para{
+        font-size: 1.1rem;
+        line-height: 35px;
+        margin: 4px 0;
+      }
+
+
+   /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
+    .h1-p{
+        min-height: 850px;
+    }
+
+    .importance-content h1 {
+        font-size: 2rem;
+      }
+
+    .importance-content p{
+        font-size: 1rem;
+    }
+
+    .letmeget-content h2{
+        font-size: 1.7rem;
+    }
 
     /* BOTTOM SIDE MESSAGE ME FORM  */
     .right{
-        margin-top: 80px;
-    }
+        margin: 50px;
+      }
 
-    .right-form{
-        margin: 0;
-    }
 }
 
 
+
+
+
+
 /* Mobile devices */
-@media screen and (min-width:320px) and (max-width:480px) {
+@media screen and (min-width:320px) and (max-width:500px) {
     html {
         font-size: 75%;
     }
