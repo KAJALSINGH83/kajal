@@ -60,14 +60,26 @@
     }
 
     .home {
-        min-height: 700px;
-        background: url("/img/home-back2.png");
-        background-size: cover;
+        height: fit-content;
+        background-image: unset;
+        background-color: #3e0765;
+    }
+
+    .new-dev{
+        display: flex;
+    }
+    
+    .new-dev img{
+        width: 60%;
+        height: 50%;
+        position: relative;
+        top: 20%;
+        left: 20%;
     }
 
       .container{
-        top: 55%;
-        left: 20%;
+        top: 5%;
+        left: 10%;
       }
 
       .container:before{
@@ -117,6 +129,33 @@
     .right{
         margin: 50px;
       }
+
+    .right-form input,
+    .right-form textarea,
+    .right-button button{
+        min-width: 80%;
+        max-width: 80%;    
+    }
+
+    .boxes-container{
+        width: 99%;
+        margin: 0 10px;
+    }
+
+    .services-box{
+        margin: 10px 20px;
+    }
+
+    .services-box p{
+        width: 98%;
+    }
+
+
+
+
+
+
+
 
 }
 
