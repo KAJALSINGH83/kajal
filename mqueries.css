@@ -41,7 +41,7 @@
 @media screen and (max-width: 819px) {
 
     *{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .home {
         height: fit-content;
