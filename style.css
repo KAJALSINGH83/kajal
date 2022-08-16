@@ -1,4 +1,3 @@
-
 /* FONTS WHICH USE IN WEBSITE FROM GOOGLE FONTS  */
 @import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
@@ -23,12 +22,9 @@ html {
 /*---------- H O M E -------*/
 
 .home {
-  height: 600px; 
-  /* width: 100wv; */
+  height: 600px;
   z-index: 10;
   font-family: "Montserrat", sans-serif;
-  /* background: img('/img/home-background.jpg') no-repeat center/cover; */
-  /* background-image: url("/img/home-background.jpg") no-repeat center/cover ; */
   background-image: url('/img/home-background.jpg');
   background-position-x: right;
   background-repeat: no-repeat;
@@ -48,7 +44,7 @@ nav {
   position: fixed;
 }
 
-.new-dev{
+.new-dev {
   display: none;
 }
 
@@ -135,7 +131,7 @@ li a:hover:after {
   position: relative;
   top: 33%;
   left: 7%;
-  
+
   font-family: "lato", sans-serif;
 }
 
@@ -309,7 +305,6 @@ li a:hover:after {
 #skills {
   background: linear-gradient(to top, #e0eafc, #cfdef3);
   height: auto;
-  /* width: 100vw; */
   font-family: "lato";
 }
 
@@ -390,9 +385,8 @@ li a:hover:after {
 
 /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
 #business-website {
-  max-width: 100%;
   min-height: 600px;
-  max-height: fit-content;
+  /* max-height: fit-content; */
   background-image: url("/img/business-meeting.jpg");
   background-size: cover;
   background-color: #38065d;
@@ -401,7 +395,7 @@ li a:hover:after {
   background-blend-mode: soft-light;
 }
 
-.h1-p{
+.h1-p {
   margin: auto 20px;
 }
 
@@ -410,7 +404,7 @@ li a:hover:after {
   height: auto;
   max-width: 1000px;
   display: block;
-  margin: auto;  
+  margin: auto;
   align-items: center;
   padding: 18px;
   position: relative;
@@ -440,7 +434,6 @@ li a:hover:after {
 
 /*----OUR SERVICES----*/
 #Our-Services {
-  /* width: 100vw; */
   font-family: 'lato';
   background: linear-gradient(to top, #e0eafc, #cfdef3);
 }
@@ -455,7 +448,6 @@ li a:hover:after {
   display: block;
   width: fit-content;
   margin: 10px auto;
-  /* padding: 30px 0; */
   letter-spacing: 1px;
   font-size: 2.5rem;
   background: -webkit-linear-gradient(#1da1f2, #3e0765);
@@ -487,16 +479,16 @@ li a:hover:after {
 .services-box {
   height: auto;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 10px 10px;
   margin: 50px 15px 20px 15px;
   text-align: center;
   flex-direction: column;
-  transition: 0.4s ease-in-out background-color;
+  transition: 0.7s ease-in-out background-color;
 }
 
 .services-box:hover {
   color: white;
-  border-radius: 13px;
+  border-radius: 2%;
   background-color: #3d0761d7;
 }
 
@@ -570,7 +562,6 @@ li a:hover:after {
 /* -------GET IN TOUCH (CONTACT US)-------- */
 #contact-us {
   height: auto;
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   background-color: #172337;
@@ -663,9 +654,11 @@ li a:hover:after {
   position: relative;
 }
 
+
 .right-form img {
   width: 23px;
-  margin-top: 12px;
+  margin-top: 3%;
+
   position: absolute;
   left: 10px;
   z-index: 1;

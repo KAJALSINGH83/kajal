@@ -1,11 +1,9 @@
 /* ------MEDIA QUERIES FOR RESPONSIVE WEBSITE DESIGN FOR MOBILE AND TABLET SCREENS----- */
 
 /* Desktops, large screens */
-@media screen and (max-width:1200px) {
-
+@media screen and (max-width: 1200px) {
     .home {
         height: 550px;
-
     }
 
     nav {
@@ -13,173 +11,154 @@
     }
 
     .aboutimg {
-        width: 100vw;
         display: block;
     }
-    
+
     #about img {
         display: block;
         margin: 50px auto 0;
     }
-    
-    .content{
+
+    .content {
         margin: 0 30px;
         padding: 0 0 20px;
         text-align: center;
     }
-
 }
 
-
-
-
 /* Small screens, laptops */
-@media screen and (min-width:820px) and (max-width:1024px) {
-
-    .letmeget-content h2{
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    .letmeget-content h2 {
         font-size: 2.7rem;
     }
 
-    .h1-p{
+    .h1-p {
         min-height: 900px;
     }
-
 }
 
-
-
-
-
-
 /* iPads, Tablets */
-@media screen and (max-width:819px) {
+@media screen and (max-width: 819px) {
 
+    *{
+        overflow: hidden;
+    }
     .home {
         height: fit-content;
         background-image: unset;
         background-color: #3e0765;
     }
 
-    .new-dev{
+    .new-dev {
         display: flex;
         padding-top: 20%;
     }
-    
-    .new-dev img{
+
+    .new-dev img {
         width: 60%;
-        height: 50%;
         position: relative;
         top: 20%;
         left: 20%;
     }
 
-      .container{
+    .container {
         top: 5%;
-        left: 10%;
-      }
+        left: 20%;
+    }
 
-      .container:before{
+    .container:before {
         display: none;
-      }
+    }
 
-      .start {
+    .start {
         display: none;
-      }
+    }
 
-
-      /* DEVELOPER IMAGE LEFT SIDE */
-    .aboutimg{
+    /* DEVELOPER IMAGE LEFT SIDE */
+    .aboutimg {
         padding: 0;
-      }
+    }
 
-      #about img{
+    #about img {
         width: 90%;
         height: 1%;
-      }
+    }
 
-      .para{
+    .para {
         font-size: 1.1rem;
         line-height: 35px;
         margin: 4px 0;
-      }
+    }
 
-
-   /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
-    .h1-p{
+    /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
+    .h1-p {
         height: 900px;
     }
 
     .importance-content h1 {
         font-size: 2rem;
-      }
+    }
 
-    .importance-content p{
+    .importance-content p {
         font-size: 1rem;
     }
 
-    .letmeget-content h2{
+    .letmeget-content h2 {
         font-size: 1.7rem;
     }
 
-    .services-box{
+    .services-box {
         width: 400px;
+        margin: 10px 20px;
     }
 
-    /* BOTTOM SIDE MESSAGE ME FORM  */
-    .right{
-        margin: 50px;
-      }
-
-    .right-form input,
-    .right-form textarea,
-    .right-button button{
-        min-width: 80%;
-        max-width: 80%;    
-    }
-
-    .boxes-container{
+    .boxes-container {
         width: 99%;
         margin: 0 10px;
     }
 
-    .services-box{
-        margin: 10px 20px;
-    }
-
-    .services-box p{
+    .services-box p {
         width: 98%;
     }
 
+    /* BOTTOM SIDE MESSAGE ME FORM  */
 
-
-
-
-
-
-
-}
-
-
-
-
-
-
-/* Mobile devices */
-@media screen and (min-width:300px) and (max-width:500px) {
-
-
-
-    .boxes{
-        /* width: 98%; */
-         margin: 0;
+    .left{
+        margin-left: 20px;
+    }
+    .right {
+        margin: 50px 0 0 20px;
     }
 
-       /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
-       .h1-p{
+    .right-form input,
+    .right-form textarea,
+    .right-button button {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
+
+/* Mobile devices */
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    .container {
+        top: 5%;
+        left: 5%;
+    }
+
+    .container h1{
+        font-size: 2.7rem;
+    }
+    .boxes {
+        margin: 0;
+    }
+
+    /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
+    .h1-p {
         height: 1500px;
     }
 
+    .right-form img {
+        margin-top: 6%;
+    }
 }
-
-
-
