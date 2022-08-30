@@ -2,4 +2,4 @@
 
 My Portfolio website
 
-[lakhvir-dev.netlify.app](lakhvir-dev.netlify.app)
+[lakhvir-dev.netlify.app](https://lakhvir-dev.netlify.app/)
