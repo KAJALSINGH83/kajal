@@ -20,7 +20,6 @@
     }
 
     .content {
-        margin: 0 30px;
         padding: 0 0 20px;
         text-align: center;
     }
@@ -107,13 +106,14 @@
         font-size: 1.7rem;
     }
 
+
+    /* our services  */
     .services-box {
         width: 400px;
-        margin: 10px 20px;
+        margin: 10px 0px;
     }
 
     .boxes-container {
-        width: 99%;
         margin: 0 10px;
     }
 
@@ -149,9 +149,20 @@
     .container h1{
         font-size: 2.7rem;
     }
+
+    .para{
+        margin: 0;
+    }
+
+    /* MY SKILLS BOXES */
     .boxes {
         margin: 0;
     }
+
+    .skills-box:hover {
+        transform: scale(1.10);
+      }
+
 
     /* ---- WHY EVERY BUSINESS NEED A WEBSITE SECTION ---- */
     .h1-p {
